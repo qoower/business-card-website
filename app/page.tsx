@@ -13,8 +13,8 @@ export default function Home() {
             <a href="#about">Обо мне</a>
             <a href="#contact">Контакты</a>
           </div>
-          <a className="navCta" href="mailto:qoower@gmail.com">
-            Написать
+          <a className="navCta" href="mailto:qoower.popov@yandex.ru">
+            Почта
           </a>
         </nav>
 
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
             <div className="portraitFrame">
               <img
-                src="/viktor-popov.jpg"
+                src="/viktor-popov-cutout.png"
                 alt="Виктор Попов — разработчик и метеоролог"
                 width="860"
                 height="860"
@@ -138,9 +138,19 @@ export default function Home() {
         <div className="shell contactInner">
           <p className="sectionNumber light">03 / КОНТАКТ</p>
           <h2>Обсудим данные,<br />погоду или разработку?</h2>
-          <a className="contactMail" href="mailto:qoower@gmail.com">
-            qoower@gmail.com <ArrowUpRight />
-          </a>
+          <div className="contactLinks">
+            <a className="contactLink" href="mailto:qoower.popov@yandex.ru">
+              Почта <ArrowUpRight />
+            </a>
+            <a
+              className="contactLink"
+              href="https://t.me/qoower"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Телеграмм <ArrowUpRight />
+            </a>
+          </div>
           <div className="footerLine">
             <span>Виктор Попов © 2026</span>
             <span>Иннополис · работаю удалённо</span>

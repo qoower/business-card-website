@@ -11,8 +11,11 @@ test("builds the personal website with its essential content", async () => {
   assert.match(page, /Виктор Попов/);
   assert.match(page, /Кандидат физико-математических наук/);
   assert.match(page, /qoowere4\.beget\.tech/);
+  assert.match(page, /mailto:qoower\.popov@yandex\.ru/);
+  assert.match(page, /https:\/\/t\.me\/qoower/);
+  assert.doesNotMatch(page, /qoower@gmail\.com/);
   assert.match(page, /02 \/ ОБО МНЕ/);
   assert.doesNotMatch(page, /IVA Technologies|Воейкова|Главный инженер-разработчик/);
   assert.match(layout, /Виктор Попов — разработчик и метеоролог/);
-  await access(new URL("../public/viktor-popov.jpg", import.meta.url));
+  await access(new URL("../public/viktor-popov-cutout.png", import.meta.url));
 });
