@@ -9,4 +9,7 @@ npm install
 npm run dev
 ```
 
-Проверка production-сборки: `npm test`.
+Проверка production-сборки для Vercel: `npm test`.
+
+Для альтернативного развёртывания через Sites доступны команды
+`npm run dev:sites` и `npm run build:sites`.
