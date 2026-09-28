@@ -13,9 +13,6 @@ export default function Home() {
             <a href="#about">Обо мне</a>
             <a href="#contact">Контакты</a>
           </div>
-          <a className="navCta" href="mailto:qoower.popov@yandex.ru">
-            Почта
-          </a>
         </nav>
 
         <div className="heroGrid shell">
@@ -68,7 +65,7 @@ export default function Home() {
         </div>
         <div className="heroTicker" aria-hidden="true">
           <span>МЕТЕОРОЛОГИЯ</span><i>•</i><span>C++</span><i>•</i><span>PYTHON</span><i>•</i>
-          <span>DATA SCIENCE</span><i>•</i><span>WEBRTC</span><i>•</i><span>КЛИМАТ</span>
+          <span>DATA SCIENCE</span><i>•</i><span>АНАЛИЗ ДАННЫХ</span><i>•</i><span>КЛИМАТ</span>
         </div>
       </section>
 
@@ -79,8 +76,8 @@ export default function Home() {
         </div>
         <div className="projectContent">
           <p className="bigCopy">
-            Обычный прогноз видит лишь несколько дней вперёд. Мой сервис смотрит
-            дальше — на многолетнюю климатическую статистику.
+            Обычный прогноз видит лишь несколько дней вперёд. Мой сервис позволяет
+            увидеть многолетнюю климатическую статистику в удобном виде.
           </p>
           <div className="featureGrid">
             <article>
@@ -153,7 +150,6 @@ export default function Home() {
           </div>
           <div className="footerLine">
             <span>Виктор Попов © 2026</span>
-            <span>Иннополис · работаю удалённо</span>
           </div>
         </div>
       </section>
