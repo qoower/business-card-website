@@ -80,7 +80,7 @@ h1 em { color: var(--blue); font-weight: 500; }
 .heroTicker i { color: var(--coral); font-style: normal; }
 
 .section { padding-block: 125px; display: grid; grid-template-columns: .78fr 1.22fr; gap: 90px; }
-.sectionIntro h2, .science h2 { font-size: clamp(44px, 5.2vw, 72px); line-height: 1.02; margin: 0; }
+.sectionIntro h2, .about h2 { font-size: clamp(44px, 5.2vw, 72px); line-height: 1.02; margin: 0; }
 .projectContent { border-top: 1px solid var(--line); padding-top: 34px; }
 .bigCopy { margin: 0 0 64px; font-size: clamp(23px, 2.4vw, 34px); line-height: 1.35; font-family: Georgia, "Times New Roman", serif; }
 .featureGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
@@ -91,23 +91,15 @@ h1 em { color: var(--blue); font-weight: 500; }
 .featureGrid p { color: var(--ink-soft); font-size: 14px; line-height: 1.6; margin: 0; }
 .projectLink { display: inline-flex; gap: 12px; align-items: center; margin-top: 35px; padding-bottom: 6px; border-bottom: 2px solid var(--coral); font-weight: 850; }
 
-.scienceSection { background: var(--ink); color: white; overflow: hidden; }
-.science { position: relative; min-height: 570px; display: grid; grid-template-columns: .78fr 1.22fr; gap: 90px; align-items: center; }
+.aboutSection { background: var(--ink); color: white; overflow: hidden; }
+.about { position: relative; min-height: 620px; display: grid; grid-template-columns: .78fr 1.22fr; gap: 90px; align-items: center; }
 .degreeMark { font-family: Georgia, serif; font-size: clamp(110px, 17vw, 240px); line-height: 1; letter-spacing: -.1em; color: transparent; -webkit-text-stroke: 1px rgba(185,223,229,.34); transform: rotate(-8deg); }
-.scienceText { padding-block: 90px; max-width: 680px; }
+.aboutText { padding-block: 90px; max-width: 720px; }
 .sectionNumber.light { color: var(--sky); }
 .speciality { color: var(--sky); font-size: 18px; font-weight: 800; line-height: 1.4; max-width: 600px; margin: 26px 0; }
-.scienceText > p:last-child { color: rgba(255,255,255,.68); line-height: 1.75; max-width: 620px; }
-
-.experience { padding-bottom: 145px; }
-.timeline { border-top: 1px solid var(--line); }
-.timelineItem { display: grid; grid-template-columns: 170px 1fr; gap: 30px; padding: 38px 0; border-bottom: 1px solid var(--line); }
-.timelineDate { font-size: 12px; font-weight: 900; color: var(--blue); letter-spacing: .05em; }
-.timelineItem h3 { margin: -5px 0 6px; font-size: 24px; }
-.company { margin: 0 0 18px; color: var(--coral); font-weight: 850; }
-.timelineItem div:last-child > p:last-child { margin: 0; color: var(--ink-soft); line-height: 1.7; max-width: 720px; }
+.aboutText > p:nth-of-type(3) { color: rgba(255,255,255,.68); line-height: 1.75; max-width: 620px; }
 .skills { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 34px; }
-.skills span { border: 1px solid var(--line); padding: 10px 14px; border-radius: 999px; background: white; font-size: 12px; font-weight: 750; }
+.skills span { border: 1px solid rgba(255,255,255,.22); padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,.06); color: white; font-size: 12px; font-weight: 750; }
 
 .contact { background: var(--blue); color: white; }
 .contactInner { padding-block: 105px 36px; }
@@ -118,10 +110,10 @@ h1 em { color: var(--blue); font-weight: 500; }
 @media (max-width: 900px) {
   .heroGrid { grid-template-columns: 1fr; padding-top: 55px; }
   .portraitWrap { justify-self: center; width: min(76vw, 450px); }
-  .section, .science { grid-template-columns: 1fr; gap: 55px; }
-  .science { padding-block: 90px; }
+  .section, .about { grid-template-columns: 1fr; gap: 55px; }
+  .about { padding-block: 90px; }
   .degreeMark { position: absolute; right: -10px; top: 25px; opacity: .45; }
-  .scienceText { position: relative; padding: 0; max-width: 720px; }
+  .aboutText { position: relative; padding: 0; max-width: 720px; }
 }
 
 @media (max-width: 640px) {
@@ -142,8 +134,7 @@ h1 em { color: var(--blue); font-weight: 500; }
   .featureGrid article + article { padding-left: 0; border-left: 0; }
   .featureGrid h3 { margin-top: 18px; }
   .bigCopy { margin-bottom: 45px; }
-  .science { min-height: 620px; }
-  .timelineItem { grid-template-columns: 1fr; gap: 20px; }
+  .about { min-height: 680px; }
   .footerLine { flex-direction: column; gap: 10px; margin-top: 75px; }
 }
 

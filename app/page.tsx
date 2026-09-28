@@ -10,7 +10,7 @@ export default function Home() {
           </a>
           <div className="navLinks">
             <a href="#project">Проект</a>
-            <a href="#experience">Опыт</a>
+            <a href="#about">Обо мне</a>
             <a href="#contact">Контакты</a>
           </div>
           <a className="navCta" href="mailto:qoower@gmail.com">
@@ -40,7 +40,7 @@ export default function Home() {
               >
                 Открыть сервис <ArrowUpRight />
               </a>
-              <a className="textLink" href="#experience">
+              <a className="textLink" href="#about">
                 Обо мне <span aria-hidden="true">↓</span>
               </a>
             </div>
@@ -110,67 +110,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="scienceSection">
-        <div className="science shell">
+      <section className="aboutSection" id="about">
+        <div className="about shell">
           <div className="degreeMark" aria-hidden="true">PhD</div>
-          <div className="scienceText">
-            <p className="sectionNumber light">02 / НАУКА</p>
-            <h2>Кандидат физико-математических наук</h2>
+          <div className="aboutText">
+            <p className="sectionNumber light">02 / ОБО МНЕ</p>
+            <h2>Разработчик и учёный в сфере метеорологии</h2>
             <p className="speciality">
-              по специальности «Метеорология, климатология и агрометеорология»
+              Кандидат физико-математических наук по специальности
+              «Метеорология, климатология и агрометеорология»
             </p>
             <p>
-              Восемь с половиной лет я работал в Главной геофизической обсерватории
-              имени А. И. Воейкова: создавал ПО и базы геофизических данных,
-              анализировал наблюдения на Python, писал научные статьи и выступал на
-              конференциях.
+              Более 14 лет создаю программные продукты и работаю с данными. Соединяю
+              инженерный подход, научную методологию и знания о климате, чтобы делать
+              сложную информацию понятной и полезной.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="experience section shell" id="experience">
-        <div className="sectionIntro">
-          <p className="sectionNumber">03 / ОПЫТ</p>
-          <h2>На стыке науки<br />и инженерии</h2>
-        </div>
-        <div className="timeline">
-          <article className="timelineItem">
-            <div className="timelineDate">2020 — сейчас</div>
-            <div>
-              <h3>Главный инженер-разработчик</h3>
-              <p className="company">IVA Technologies</p>
-              <p>
-                Разрабатываю медиапроцессор и кроссплатформенные компоненты WebRTC
-                на C++. Внедряю ИИ-функции обработки видео и звука, пишу тесты на
-                Python и помогаю новым разработчикам расти в команде.
-              </p>
+            <div className="skills" aria-label="Ключевые направления">
+              {[
+                "C++", "Python", "Метеорология", "Анализ данных", "Data Science",
+              ].map((skill) => <span key={skill}>{skill}</span>)}
             </div>
-          </article>
-          <article className="timelineItem">
-            <div className="timelineDate">2012 — 2020</div>
-            <div>
-              <h3>Инженер-программист и научный сотрудник</h3>
-              <p className="company">ГГО им. А. И. Воейкова</p>
-              <p>
-                Проектировал приложения на Qt/C++ для работы с геофизическими
-                данными, создавал базы PostgreSQL и применял Python для статистики и
-                исследований.
-              </p>
-            </div>
-          </article>
-          <div className="skills" aria-label="Ключевые навыки">
-            {[
-              "C++", "Python", "Qt", "PostgreSQL", "WebRTC", "Linux",
-              "Data Science", "ГИС", "Математическая статистика", "Менторство",
-            ].map((skill) => <span key={skill}>{skill}</span>)}
           </div>
         </div>
       </section>
 
       <section className="contact" id="contact">
         <div className="shell contactInner">
-          <p className="sectionNumber light">04 / КОНТАКТ</p>
+          <p className="sectionNumber light">03 / КОНТАКТ</p>
           <h2>Обсудим данные,<br />погоду или разработку?</h2>
           <a className="contactMail" href="mailto:qoower@gmail.com">
             qoower@gmail.com <ArrowUpRight />

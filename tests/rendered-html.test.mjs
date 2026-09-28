@@ -17,5 +17,7 @@ test("renders Viktor Popov's business card", async () => {
   assert.match(html, /Виктор Попов/);
   assert.match(html, /Кандидат физико-математических наук/);
   assert.match(html, /qoowere4\.beget\.tech/);
+  assert.match(html, /ОБО МНЕ/);
+  assert.doesNotMatch(html, /IVA Technologies|Воейкова|Главный инженер-разработчик/);
   assert.doesNotMatch(html, /codex-preview/);
 });
